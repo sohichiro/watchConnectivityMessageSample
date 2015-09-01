@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>watchConnectivitySendMessageSampleWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>BAAD40601B955C66000019F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAAD40771B9564EB000019F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

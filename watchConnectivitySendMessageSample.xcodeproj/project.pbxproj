@@ -12,7 +12,56 @@
 		BAAD406A1B955C66000019F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAD40681B955C66000019F2 /* Main.storyboard */; };
 		BAAD406C1B955C66000019F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAD406B1B955C66000019F2 /* Assets.xcassets */; };
 		BAAD406F1B955C66000019F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAD406D1B955C66000019F2 /* LaunchScreen.storyboard */; };
+		BAAD407C1B9564EB000019F2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAD407A1B9564EB000019F2 /* Interface.storyboard */; };
+		BAAD407E1B9564EB000019F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAD407D1B9564EB000019F2 /* Assets.xcassets */; };
+		BAAD40851B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BAAD40841B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAAD408A1B9564EC000019F2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD40891B9564EC000019F2 /* InterfaceController.swift */; };
+		BAAD408C1B9564EC000019F2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAD408B1B9564EC000019F2 /* ExtensionDelegate.swift */; };
+		BAAD408E1B9564EC000019F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAD408D1B9564EC000019F2 /* Assets.xcassets */; };
+		BAAD40921B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BAAD40781B9564EB000019F2 /* watchConnectivitySendMessageSampleWatch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAAD40861B9564EC000019F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAAD40591B955C66000019F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAAD40831B9564EC000019F2;
+			remoteInfo = "watchConnectivitySendMessageSampleWatch Extension";
+		};
+		BAAD40901B9564EC000019F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAAD40591B955C66000019F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAAD40771B9564EB000019F2;
+			remoteInfo = watchConnectivitySendMessageSampleWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAAD40961B9564EC000019F2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BAAD40851B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAD409A1B9564EC000019F2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BAAD40921B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BAAD40611B955C66000019F2 /* watchConnectivitySendMessageSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchConnectivitySendMessageSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +71,26 @@
 		BAAD406B1B955C66000019F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAAD406E1B955C66000019F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAAD40701B955C66000019F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAAD40781B9564EB000019F2 /* watchConnectivitySendMessageSampleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchConnectivitySendMessageSampleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAD407B1B9564EB000019F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BAAD407D1B9564EB000019F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAAD407F1B9564EB000019F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAAD40841B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchConnectivitySendMessageSampleWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAD40891B9564EC000019F2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BAAD408B1B9564EC000019F2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BAAD408D1B9564EC000019F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAAD408F1B9564EC000019F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BAAD405E1B955C66000019F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAD40811B9564EC000019F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				BAAD40631B955C66000019F2 /* watchConnectivitySendMessageSample */,
+				BAAD40791B9564EB000019F2 /* watchConnectivitySendMessageSampleWatch */,
+				BAAD40881B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension */,
 				BAAD40621B955C66000019F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				BAAD40611B955C66000019F2 /* watchConnectivitySendMessageSample.app */,
+				BAAD40781B9564EB000019F2 /* watchConnectivitySendMessageSampleWatch.app */,
+				BAAD40841B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +133,27 @@
 			path = watchConnectivitySendMessageSample;
 			sourceTree = "<group>";
 		};
+		BAAD40791B9564EB000019F2 /* watchConnectivitySendMessageSampleWatch */ = {
+			isa = PBXGroup;
+			children = (
+				BAAD407A1B9564EB000019F2 /* Interface.storyboard */,
+				BAAD407D1B9564EB000019F2 /* Assets.xcassets */,
+				BAAD407F1B9564EB000019F2 /* Info.plist */,
+			);
+			path = watchConnectivitySendMessageSampleWatch;
+			sourceTree = "<group>";
+		};
+		BAAD40881B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BAAD40891B9564EC000019F2 /* InterfaceController.swift */,
+				BAAD408B1B9564EC000019F2 /* ExtensionDelegate.swift */,
+				BAAD408D1B9564EC000019F2 /* Assets.xcassets */,
+				BAAD408F1B9564EC000019F2 /* Info.plist */,
+			);
+			path = "watchConnectivitySendMessageSampleWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +164,51 @@
 				BAAD405D1B955C66000019F2 /* Sources */,
 				BAAD405E1B955C66000019F2 /* Frameworks */,
 				BAAD405F1B955C66000019F2 /* Resources */,
+				BAAD409A1B9564EC000019F2 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BAAD40911B9564EC000019F2 /* PBXTargetDependency */,
 			);
 			name = watchConnectivitySendMessageSample;
 			productName = watchConnectivitySendMessageSample;
 			productReference = BAAD40611B955C66000019F2 /* watchConnectivitySendMessageSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BAAD40771B9564EB000019F2 /* watchConnectivitySendMessageSampleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAAD40971B9564EC000019F2 /* Build configuration list for PBXNativeTarget "watchConnectivitySendMessageSampleWatch" */;
+			buildPhases = (
+				BAAD40761B9564EB000019F2 /* Resources */,
+				BAAD40961B9564EC000019F2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAAD40871B9564EC000019F2 /* PBXTargetDependency */,
+			);
+			name = watchConnectivitySendMessageSampleWatch;
+			productName = watchConnectivitySendMessageSampleWatch;
+			productReference = BAAD40781B9564EB000019F2 /* watchConnectivitySendMessageSampleWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BAAD40831B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAAD40931B9564EC000019F2 /* Build configuration list for PBXNativeTarget "watchConnectivitySendMessageSampleWatch Extension" */;
+			buildPhases = (
+				BAAD40801B9564EC000019F2 /* Sources */,
+				BAAD40811B9564EC000019F2 /* Frameworks */,
+				BAAD40821B9564EC000019F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchConnectivitySendMessageSampleWatch Extension";
+			productName = "watchConnectivitySendMessageSampleWatch Extension";
+			productReference = BAAD40841B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +220,12 @@
 				ORGANIZATIONNAME = "長尾 聡一郎";
 				TargetAttributes = {
 					BAAD40601B955C66000019F2 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					BAAD40771B9564EB000019F2 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					BAAD40831B9564EC000019F2 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -112,6 +244,8 @@
 			projectRoot = "";
 			targets = (
 				BAAD40601B955C66000019F2 /* watchConnectivitySendMessageSample */,
+				BAAD40771B9564EB000019F2 /* watchConnectivitySendMessageSampleWatch */,
+				BAAD40831B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +261,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAAD40761B9564EB000019F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAD407E1B9564EB000019F2 /* Assets.xcassets in Resources */,
+				BAAD407C1B9564EB000019F2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAD40821B9564EC000019F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAD408E1B9564EC000019F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,7 +290,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAAD40801B9564EC000019F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAD408C1B9564EC000019F2 /* ExtensionDelegate.swift in Sources */,
+				BAAD408A1B9564EC000019F2 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAAD40871B9564EC000019F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAAD40831B9564EC000019F2 /* watchConnectivitySendMessageSampleWatch Extension */;
+			targetProxy = BAAD40861B9564EC000019F2 /* PBXContainerItemProxy */;
+		};
+		BAAD40911B9564EC000019F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAAD40771B9564EB000019F2 /* watchConnectivitySendMessageSampleWatch */;
+			targetProxy = BAAD40901B9564EC000019F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BAAD40681B955C66000019F2 /* Main.storyboard */ = {
@@ -156,6 +329,14 @@
 				BAAD406E1B955C66000019F2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BAAD407A1B9564EB000019F2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAAD407B1B9564EB000019F2 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -264,6 +445,66 @@
 			};
 			name = Release;
 		};
+		BAAD40941B9564EC000019F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watchConnectivitySendMessageSampleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sohichiro.watchConnectivitySendMessageSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BAAD40951B9564EC000019F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watchConnectivitySendMessageSampleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sohichiro.watchConnectivitySendMessageSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		BAAD40981B9564EC000019F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = watchConnectivitySendMessageSampleWatch_Extension;
+				INFOPLIST_FILE = watchConnectivitySendMessageSampleWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sohichiro.watchConnectivitySendMessageSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BAAD40991B9564EC000019F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = watchConnectivitySendMessageSampleWatch_Extension;
+				INFOPLIST_FILE = watchConnectivitySendMessageSampleWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sohichiro.watchConnectivitySendMessageSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +522,22 @@
 			buildConfigurations = (
 				BAAD40741B955C66000019F2 /* Debug */,
 				BAAD40751B955C66000019F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAAD40931B9564EC000019F2 /* Build configuration list for PBXNativeTarget "watchConnectivitySendMessageSampleWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAD40941B9564EC000019F2 /* Debug */,
+				BAAD40951B9564EC000019F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAAD40971B9564EC000019F2 /* Build configuration list for PBXNativeTarget "watchConnectivitySendMessageSampleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAD40981B9564EC000019F2 /* Debug */,
+				BAAD40991B9564EC000019F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
