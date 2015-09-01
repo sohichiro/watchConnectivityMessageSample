@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchConnectivitySendMessageSampleWatch" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="status" id="kyv-2b-Gdg"/>
+                        <label width="103" alignment="center" text="---" textAlignment="center" id="rgw-2F-Si0"/>
+                        <group width="1" alignment="left" id="ylC-6i-07I">
+                            <items>
+                                <button width="0.5" alignment="left" title="🐶" id="PnC-bY-ncn">
+                                    <connections>
+                                        <action selector="pushDogButton" destination="AgC-eL-Hgc" id="0xx-8b-9Qf"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="🐱" id="u5Y-vD-JRD">
+                                    <connections>
+                                        <action selector="pushCatButton" destination="AgC-eL-Hgc" id="TAv-UZ-kg1"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="abs-Sg-hyz">
+                            <items>
+                                <button width="0.5" alignment="left" title="🐘" id="ZmM-7r-C1A">
+                                    <connections>
+                                        <action selector="pushElephantButton" destination="AgC-eL-Hgc" id="6vE-ho-z82"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="🐧" id="rin-in-ewa">
+                                    <connections>
+                                        <action selector="pushPenginButton" destination="AgC-eL-Hgc" id="rLu-5I-jnm"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="statusLabel" destination="rgw-2F-Si0" id="d5P-E0-NjB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="140" y="277"/>
+        </scene>
+    </scenes>
+</document>
